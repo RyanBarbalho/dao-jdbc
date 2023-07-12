@@ -1,18 +1,6 @@
-## Getting Started
+## O que são:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+DAO é um padrão de projetos onde um objeto fornece uma interface que abstrai o acesso a dados.
+Pode ler ou gravar dados do banco e encapsula o acesso a esses dados.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O projeto envolve implementar um sistema para administrar um banco de dados de uma loja, possuindo vendedores e departamentos, ambos com suas respectivas informações chave.
