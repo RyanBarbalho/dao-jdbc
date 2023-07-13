@@ -8,6 +8,10 @@ public class Department implements Serializable {
     private Integer id;
     private String name;
 
+    public Department() {
+        // TODO Auto-generated constructor stub
+    }
+
     public Department(Integer id, String name) {
         this.id = id;
         this.name = name;
