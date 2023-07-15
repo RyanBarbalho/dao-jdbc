@@ -1,6 +1,7 @@
 package app;
 
 import java.util.List;
+import java.util.Locale;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
@@ -10,8 +11,10 @@ import model.entities.Seller;
 public class App {
 
     public static void main(String[] args) throws Exception {
+        Locale.setDefault(Locale.US);
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
+
         System.out.println("=== TEST 1: seller findById ===\n");
         Seller seller = sellerDao.findById(3);
         System.out.println(seller);
@@ -27,5 +30,11 @@ public class App {
         for (Seller obj : list) {
             System.out.println(obj);
         }
+
+        System.out.println("\n=== TEST 4: seller insert ===\n");
+        Seller newSeller = new Seller(null, "michael phillips", "michaelP@gmail.com", new java.util.Date(), 4000.0,
+                department);
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! New id = " + newSeller.getId());
     }
 }
