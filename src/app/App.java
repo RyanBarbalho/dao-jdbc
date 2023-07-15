@@ -25,7 +25,7 @@ public class App {
         for (Seller obj : list) {
             System.out.println(obj);
         }
-        System.out.println("\n=== TEST 2: seller findByDepartment ===\n");
+        System.out.println("\n=== TEST 2: seller findAll ===\n");
         list = sellerDao.findAll();
         for (Seller obj : list) {
             System.out.println(obj);
