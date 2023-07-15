@@ -36,5 +36,14 @@ public class App {
                 department);
         sellerDao.insert(newSeller);
         System.out.println("Inserted! New id = " + newSeller.getId());
+
+        System.out.println("\n=== TEST 5: seller update ===\n");
+        seller = sellerDao.findById(1);
+        // only changed the name
+        seller.setName("Sanji Vinsmoke");
+        seller.setEmail("chainCook@gmail.com");
+        sellerDao.update(seller);
+        System.out.println("Update completed");
+
     }
 }
